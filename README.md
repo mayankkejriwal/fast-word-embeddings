@@ -5,3 +5,5 @@ The packages that you need to install to get this module  working on python 2.7 
 The code in this module fully supports utf-8 encodings, so you do not have to worry about stripping out unicodes from your files.
 
 We have provided usage examples for all utilities in this repo in examples.py. You can use any of those functions with minimal changes to get the code working for you (assuming the project environment is correctly set up). Example datasets that are used in examples.py are provided in fast-word-embeddings-datasets for you to start playing with the code quickly. This code is being actively maintained at present; please open up issues if you notice any. The initial version of this module has been designed for the End Human Trafficking Hackathon being held in New York City from OCt 7 to 9, 2016.
+
+Because of the sensitive nature of the data, fast-word-embeddings-datasets is encrypted and available to participants from the hackathon. However, you're still free to use your own data, and the code in examples.py help you get started.
