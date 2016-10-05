@@ -30,7 +30,21 @@ class DocEmbedding:
                     for k, v in obj.items():
                         self._doc_embedding_dict[k] = v
         else:
-            raise Exception('Expected either a word embeddings file or a word embeddings object!')
+            raise Exception('Expected either a doc embeddings file or a doc embeddings object!')
+
+    def write_embeddings_to_file(self, output_file):
+        """
+
+        :param output_file:
+        :return: None
+        """
+        out = codecs.open(output_file, 'w', 'utf-8')
+        for k, v in self._doc_embedding_dict.items():
+            answer = dict()
+            answer[k] = v
+            json.dump(answer, out)
+            out.write('\n')
+        out.close()
 
     def get_similar_docs(self, doc_ids, k=10, print_warning=True):
         """

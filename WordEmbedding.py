@@ -30,6 +30,20 @@ class WordEmbedding:
         else:
             raise Exception('Expected either a word embeddings file or a word embeddings object!')
 
+    def write_embeddings_to_file(self, output_file):
+        """
+
+        :param output_file:
+        :return: None
+        """
+        out = codecs.open(output_file, 'w', 'utf-8')
+        for k, v in self._word_embedding_dict.items():
+            answer = dict()
+            answer[k] = v
+            json.dump(answer, out)
+            out.write('\n')
+        out.close()
+
     def get_similar_words(self, words, k=10, prune_threshold=1.0, print_warning=True):
         """
 

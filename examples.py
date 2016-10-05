@@ -2,7 +2,9 @@
 (1) This code contains brief functions demonstrating some ways of using the code. These are NOT meant to be unittests.
 (2) To try out the code snippets, manually change the paths below. For your convenience, all paths appear right at
 the beginning of a function. All relevant files are included in the github repo.
-(3) Example functions are in a 'natural' sequence. This is the typical sequence you would follow in your analytics,
+(3) Each example function is meant to be independent, although you may have to run some before others (see (4))
+to generate the files needed for each function.
+(4) Example functions are in a 'natural' sequence. This is the typical sequence you would follow in your analytics,
 starting by first putting your data in a compatible format, then training, then using the embeddings.
 """
 from WordEmbedding import WordEmbedding
